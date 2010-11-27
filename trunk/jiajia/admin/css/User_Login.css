@@ -1,0 +1,144 @@
+*{
+	margin:0;
+	padding:0;
+}
+#userlogin_body {
+	background: url(../Images/user_all_bg.gif) #226cc5 repeat-x 50% top;
+    margin: 110px 0px 0px; 
+	font: 12px/150% Arial, "宋体" ,Helvetica,sans-serif;
+	text-decoration: none
+}
+
+#user_login {
+	margin: 0px auto;
+	width: 590px;
+}
+#user_top,#user_main,#user_bottom {
+	clear: both;
+}
+#user_top LI,#user_main LI,#user_bottom LI {
+	float: left;
+	list-style-type: none;
+}
+.user_top_r {
+	background: url(../Images/user_top_r.gif) no-repeat 50% top;
+}
+.user_main_r {
+	background: url(../Images/user_main_r.gif) #bec5cc no-repeat 50% top;
+}
+.user_main_c {
+	background: url(../Images/user_main_c.gif) #bec5cc no-repeat 50% top;
+	width: 280px;
+}
+.user_main_l {
+	background: url(../Images/user_main_l.gif) #bec5cc no-repeat 50% top;
+}
+.user_bottom_r {
+	background: url(../Images/user_bottom_r.gif) no-repeat 50% top;
+}
+.user_bottom_c {
+	background: url(../Images/user_bottom_c.gif) no-repeat 50% top;
+	color: #fff; 
+	line-height: 117px;
+	padding-top: 20px;
+	text-align: right;
+}
+.user_bottom_c A {
+	color: yellow; 
+	text-decoration: underline;
+}
+.user_bottom_c A:hover {
+	color: #c00;
+}
+.user_bottom_l {
+	background: url(../Images/user_bottom_l.gif) no-repeat 50% top
+}
+.user_top_r,.user_main_r ,.user_bottom_r{
+	float: left;
+	width: 180px;
+}
+user_main_c,.user_bottom_c {
+	float: left;
+	width: 280px;
+}
+.user_main_l,.user_bottom_l {
+	float: left;
+	width: 129px;
+}
+.user_top_c {
+	background: url(../Images/user_top_c.png) no-repeat 50% top;
+}
+.user_top_c {
+	float: left;
+	width: 409px;
+}
+.user_top_c {
+	height: 116px;
+}
+.user_top_r {
+	height: 116px;
+}
+.user_main_c,.user_main_l,.user_main_r {
+	height: 139px;
+}
+.user_main_r {
+	line-height: 139px;
+}
+.user_bottom_r,.user_bottom_c,.user_bottom_l {
+	height: 117px
+}
+.user_main_box LI {
+	float: left;
+	list-style-type: none;
+}
+.user_main_box .user_main_text {
+	line-height: 22px;
+	height: 22spx;
+}
+.user_main_box .user_main_input {
+	line-height: 34px;
+	height: 34px;
+}
+.user_main_box .user_main_text {
+	text-align:center;
+	width: 60px;
+	color: #000;
+}
+.user_main_box .user_main_input IMG {
+	margin-bottom: -2px;
+	margin-left: -25px;
+}
+.TxtUserNameCssClass {
+	border :none;
+	padding-left: 25px;
+	background: url(../Images/user_login_name.gif) no-repeat;
+	width: 165px;
+	line-height: 20px;
+	height: 21px; 
+}
+.TxtPasswordCssClass {
+	border:none;
+	padding-left: 25px;
+	background: url(../Images/user_login_password.gif) no-repeat;
+	width: 165px;
+	line-height: 20px;
+	height: 21px;
+}
+.TxtValidateCodeCssClass {
+	border: none;
+	padding-left: 25px;
+	background: url(../Images/user_login_validatecode.gif) no-repeat;
+	ime-mode: disabled;
+	width: 91px;
+	line-height: 20px;
+	height: 21px;  
+}
+.IbtnEnterCssClass {
+	width: 111px; height: 122px;
+}
+.foot_copy{
+	position:absolute; 
+	bottom:220px;
+	text-align:center;
+	width:100%; height:20px;
+}
