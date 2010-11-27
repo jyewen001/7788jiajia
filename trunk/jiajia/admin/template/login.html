@@ -1,0 +1,106 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<link href="css/Default.css" type="text/css" rel="stylesheet">
+	<link  href="css/xtree.css" type="text/css" rel="stylesheet">
+	<link  href="css/User_Login.css" type="text/css" rel="stylesheet">
+	<meta http-equiv="Content-Type" content="text/html; charset=<{$Charset}>">
+	<script language="javascript" src="../scripts/jquery.js"></script>
+	<script language="javascript" src="js/jquery.pngFix.js"></script>
+</head>
+<body id="userlogin_body">
+<form action="login.php" method="post" name="login_frm" id="LoginFrm" class="s_lo_f" autocomplete="off">
+	<input type="hidden" name="do" value="login" />
+	<input type="hidden" name="formhash" value="<{$formhash}>" />
+	<div id="user_login">
+		<DL>
+			  <DD id="user_top">
+				  <ul>
+					<li class="user_top_c"></li>
+					<li class="user_top_r"></li>
+				  </ul>
+			  </DD>
+			  <DD id="user_main">
+				  <ul>
+						<li class="user_main_l"></li>
+						<li class="user_main_c">
+							<div class="user_main_box">
+								<ul>
+									  <li class="user_main_text">用户名：</li>
+									  <li class="user_main_input">
+									  	<input class="TxtUserNameCssClass" type="text" name="data[username]" id="username" size="16" maxLength="20" value="">
+									  </li>
+								</ul>
+								<ul>
+									  <li class="user_main_text" >密&nbsp;&nbsp;&nbsp;&nbsp;码：</li>
+									  <li class="user_main_input">
+									  	<input class="TxtPasswordCssClass" type="password" name="data[userpass]" id="userpass" size="16" maxLength="20" value="">
+									  </li>
+							    </ul>
+								<div class="error_info">
+									<{if $LoginError}><{$LoginError}><{/if}>
+								</div>
+							 </div>
+						 </li>
+						 
+						<li class="user_main_r">
+							<input class="IbtnEnterCssClass" id="IbtnEnter" style="border:none;" type="image" src="images/user_botton.gif" name="IbtnEnter">
+						</li>
+				  </ul>
+			  </DD>
+			  <DD id="user_bottom">
+				  <ul>
+					<li class="user_bottom_l"></li>
+					<li class="user_bottom_c"></li>
+					<li class="user_bottom_r"></li>
+				 </ul>
+			 </DD>
+		 </DL>
+		 
+	</div>
+</form>
+	<div class="foot_copy">2009-2010年    7788家具家居网版权所有</div>
+<!-- 
+$(document).ready(function(){   
+	$('#username').focus();
+	$('#imgcaptcha').click(
+		function(){
+		$('#imgcaptcha').attr('src','../captcha.php?sid=' + Math.random());
+		$('#capt_login_admin').focus();
+		return false;
+		}
+	);
+	$("#Login").click(
+		function(){   
+			<{if $smarty.session.is_admin==""}>
+				if($('#username').val() == ""){
+					alert("<{$_pls_input_username}>");
+					$('#username').focus();
+					return false;
+				}
+			<{/if}>
+			if($('#userpass').val() == ""){
+				alert("<{$_pls_input_passwd}>");
+				$('#userpass').focus();
+				return false;
+			}
+			<{if $ifcapt}>
+			if($('#capt_login_admin').val() == ""){
+				alert("<{$_pls_input_authcode}>");
+				$('#capt_login_admin').focus();
+				return false;
+			}
+			<{/if}>
+			$("#LoginFrm").submit();   
+			$("#Login").attr("disabled", "disabled");
+		}
+	);
+});
+//-->
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('div.logo').pngFix( );
+	});
+</script>
+</body>
+</html>
